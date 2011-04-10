@@ -1,4 +1,4 @@
 <h1>AuthTest</h1>
 <p>This is the home of AuthTest.</p>
 
-<%= embed_rpx user_session_url %>
+<%= embed_rpx user_session_url unless user_signed_in? %>

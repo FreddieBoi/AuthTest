@@ -1,8 +1,7 @@
 AuthTest::Application.routes.draw do
   devise_for :users
 
-  get "pages/home"
-  get "pages/secret"
+  match '/secret', :to => 'pages#secret'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
